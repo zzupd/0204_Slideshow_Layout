@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/* Reset 시작 */
+* {
+    color: #000;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a         {    text-decoration: none;    }
+a:link    {    color: #555;              }
+a:visited {    color: #555;              }
+a:hover   {    color: #777;              }
+a:active  {    color: #888;              }
+a:focus   {    color: #555;              }
+
+ul         {   list-style: none;         }
+/* Reset 끝 */
+
+
+/* div#wrap 시작 */
+div#wrap {
+    width: 1200px;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+/* div#wrap 끝 */
+
+#wrap>* {
+    color: #f00;
+    font-size: 40px;
+    border: 1px solid #000;
+}
+
+#header, #aside, #footer {
+    height: 100px;
+}
+
+/* 슬라이드 쇼 레이아웃 시작 */
+#main div#slideArea {
+    width: 1200px;
+    height: 300px;
+    overflow: hidden;
+}
+
+
+#main div#slideshow {
+    width: 3600px;
+    height: 300px;
+    border: 1px solid #f00;
+
+    position: relative;
+
+}
+
+#main #slideshow>ul>li {
+
+    position: absolute;
+}
+#main #slideshow>ul>li:nth-child(2) {
+    left: 1200px;
+}
+#main #slideshow>ul>li:nth-child(3) {
+    left: 2400px;
+}
+/* 슬라이드 쇼 레이아웃 끝 */
+
+
+
+
+
+
+
+
+
